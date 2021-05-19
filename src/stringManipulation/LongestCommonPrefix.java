@@ -25,12 +25,12 @@ public class LongestCommonPrefix {
 	public static void main(String[] args) {
 		
 		String[] st = { "flower", "flow", "flight"};
-		System.out.println(longestCommonPrefix(st));
 		System.out.println(longestCommonPrefix1(st));
+		System.out.println(longestCommonPrefix2(st));
 		
 	}
 	// 1.Way
-	public static String longestCommonPrefix(String[] strs) {
+	public static String longestCommonPrefix1(String[] strs) {
 		
 		StringBuilder sb = new StringBuilder();
 		
@@ -50,7 +50,7 @@ public class LongestCommonPrefix {
 	}
 	
 	// 2.Way
-	public static String longestCommonPrefix1(String[] a) {
+	public static String longestCommonPrefix2(String[] a) {
 		
 	    int size = a.length;
 	    /* if size is 0, return empty string */

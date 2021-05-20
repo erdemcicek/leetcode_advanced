@@ -1,6 +1,6 @@
 package stringManipulation;
 
-// Write a program that returns the number of unique palindrome that a given String contains.
+// Write a program that returns the number of unique longest palindrome/s that a given String contains.
 // Example 1 : "abcdeffedxyx" should return 2 ==> "deffed" , "xyx"
 // Example 2 : "abbcddeff"    should return 3 ==> "bb", "dd", "ff"
 

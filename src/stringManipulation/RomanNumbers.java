@@ -30,9 +30,7 @@ public class RomanNumbers {
 				sum = sum - hm.get(str.charAt(i)) + hm.get(str.charAt(i+1));
 				i++;
 			}
-			else {
-				sum += hm.get(str.charAt(i));
-			}
+			else  sum += hm.get(str.charAt(i));
 		}
 		return sum;
 	}

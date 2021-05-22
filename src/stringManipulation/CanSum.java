@@ -10,7 +10,6 @@ public class CanSum {
 		Map<Integer, Boolean> hm = new HashMap<>();
 		int[] arr = {25, 5, 12};
 		System.out.println(canSum(100, arr, hm));
-		
 	}
 	public static boolean canSum(int targetSum, int[] numbers, Map<Integer, Boolean> hm ) {
 		

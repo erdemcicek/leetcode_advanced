@@ -4,7 +4,6 @@ import java.util.List;
 
 public class CanConstructOurselves {
 	
-
 	public static void main(String[] args) {
 		
 		List<String> list = List.of("d", "e", "den","dn", "niz");

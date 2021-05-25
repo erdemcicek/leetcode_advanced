@@ -34,7 +34,4 @@ public class TwoSum {
 		
 		throw new IllegalArgumentException("No solution found");
 	}
-	
-	
-
 }

@@ -29,10 +29,10 @@ public class IntegerToRoman {
 											    
 		if ( n <= 0 || n > 3999) return "Invalid Number";
 		
-		List<Character> list = List.of('I','V','X','L','C','D','M'); //02 24 46
+		List<Character> list = List.of('I','V','X','L','C','D','M');
 		
-		StringBuilder sb = new StringBuilder("" + n); // "394"
-		sb.reverse();								  // "493"
+		StringBuilder sb = new StringBuilder("" + n); 
+		sb.reverse();
 		StringBuilder t = new StringBuilder();
 		/*			 1111               444                 777
 		 		i=0  1		ind=0 2i	4  		ind=0,1		7	  ind=1,0(mth)  2i+1,2i(mth)
@@ -40,10 +40,9 @@ public class IntegerToRoman {
 		 		i=2  100	ind=4 2i	400		ind=4,5 	700	  ind=5,4(mth)  2i+1,2i(mth)
 		 		i=3  1000	ind=6 2i	----				----
 		 */
-		// DCCXLV		
-		for ( int i = sb.length()-1 ; i >= 0  ; i--) {// t = M  49-1
-//		for ( int i = 0 ; i < sb.length()  ; i++) {			
-			int digit = sb.charAt(i) - '0'; // 3, 2, 1, 0
+		
+		for ( int i = sb.length()-1 ; i >= 0  ; i--) {			
+			int digit = sb.charAt(i) - '0'; 
 															
 			switch(digit) {
 				case 1:

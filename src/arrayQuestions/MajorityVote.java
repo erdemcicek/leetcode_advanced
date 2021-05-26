@@ -45,6 +45,4 @@ public class MajorityVote {
 //		.entrySet().stream().findAny(t->t.getValue()>a);
 		return 0;
 	}
-	//
-
 }

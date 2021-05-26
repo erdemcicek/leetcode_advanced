@@ -7,12 +7,7 @@ public class SubsetTotal {
 	
 	public static void main(String[] args) {
 		int[] arr = { 2, 4, 6, 5, 10, 2, 4};
-		//            0, 1, 2, 3, 4 , 5, 6, 7, 8, 9
-		/*
-		  10, 2, 4  0,1,4 - 4,5,6
-		  10, 6
-		  
-		 */
+		
 		System.out.println(countSets(arr, 16));
 	}
 	public static int countSets(int[] arr, int total) {
@@ -39,5 +34,4 @@ public class SubsetTotal {
 		hm.put(key, to_return);
 		return to_return;
 	}
-
 }

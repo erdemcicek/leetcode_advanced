@@ -12,7 +12,6 @@ public class HowSum {
 		List<Integer> arr = List.of(50,30,10);
 		List<Integer> list = new ArrayList<>();
 		list.addAll(arr);
-		
 	
 		Map<Integer, ArrayList<Integer>> hm = new HashMap<>();
 		System.out.println(howSum(90, list, hm));
@@ -35,9 +34,8 @@ public class HowSum {
 				return hm.get(targetSum);
 			}
 		}
-		
+
 		hm.putIfAbsent(targetSum, null);
 		return null;
 	}
-
 }

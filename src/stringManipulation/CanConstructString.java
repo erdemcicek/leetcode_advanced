@@ -14,7 +14,7 @@ public class CanConstructString {
 		Map<String, Boolean> hm = new HashMap<>();
 		List<String> list = List.of("e","ee","eee","eeee");
 		
-		System.out.println(canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", list, hm));
+		System.out.println(canConstruct("eeeeeeeeeeeeeeeeef", list, hm));
 	}
 	public static boolean canConstruct(String target, List<String> bank, Map<String, Boolean> hm ) {
 		

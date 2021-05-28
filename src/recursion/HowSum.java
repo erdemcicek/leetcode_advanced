@@ -15,7 +15,6 @@ public class HowSum {
 	
 		Map<Integer, ArrayList<Integer>> hm = new HashMap<>();
 		System.out.println(howSum(90, list, hm));
-		
 	}
 	
 	public static ArrayList<Integer>howSum(int targetSum, List<Integer> list, Map<Integer, ArrayList<Integer>> hm) {
@@ -34,7 +33,6 @@ public class HowSum {
 				return hm.get(targetSum);
 			}
 		}
-
 		hm.putIfAbsent(targetSum, null);
 		return null;
 	}

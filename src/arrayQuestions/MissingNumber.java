@@ -25,8 +25,7 @@ public class MissingNumber {
 		}
 		if (found) return nums.length;
 		
-		return 0;
-		
+		return 0;	
 	}
 	
 	private static int missingNum2(int[] nums) {
@@ -37,5 +36,4 @@ public class MissingNumber {
 		}
 		return sum;
 	}
-
 }

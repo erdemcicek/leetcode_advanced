@@ -23,10 +23,10 @@ public class MultiplyStrings {
 		     12
 		     37
 		   ------ 
-		     94
+		     84
 		    36
 		  -------
-		    454
+		    444
 		 */
 		
 		char[] c1 = s1.toCharArray();
@@ -54,14 +54,4 @@ public class MultiplyStrings {
 		
 		return sb.length() == 0 ? "0" : sb.toString();
 	}
-
 }
-
-/*
-   
-   
-   Selection Sort
-   Prototype olusturma
-  
-  
- */

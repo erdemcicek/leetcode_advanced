@@ -4,16 +4,12 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
-/*
- 		Given a string s, find the length of the longest substring without repeating characters.
- */
-
+ // Given a string s, find the length of the longest substring without repeating characters.
+ 
 public class LongestStringNoRep {
 
 	public static void main(String[] args) {
 		System.out.println(lengthOfLongestSub("pww"));
-		
-		
 		
 	}
 	public static int lengthOfLongestSub(String s) {
@@ -32,5 +28,4 @@ public class LongestStringNoRep {
 		}
 		return max;
 	}
-
 }

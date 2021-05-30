@@ -28,7 +28,6 @@ public class FindSingleNumber {
 			if (!list.contains(element)) list.add(element);
 			else list.remove(element);
 		}
-		
 		return list.get(0);
 	}
 	
@@ -46,7 +45,6 @@ public class FindSingleNumber {
 		for ( Integer element : hm.keySet()) {
 			if ( hm.get(element) == 1) return element;
 		}
-		
 		return 0;
 	}
 	

@@ -14,10 +14,6 @@ package stringManipulation;
 	
 	Input  : a = "1010", b = "1011"
 	Output : "10101"
-	
-	11 
-	 1
-	----
 	  
  */
 
@@ -26,7 +22,7 @@ public class AddBinaryString {
 	public static void main(String[] args) {
 		
 		System.out.println(addBinary("1010", "1011"));
-//		System.out.println(powOfTwo("110"));
+		System.out.println(powOfTwo("110"));
 	}
 	private static String addBinary(String a, String b) {
 		
@@ -40,8 +36,8 @@ public class AddBinaryString {
 		return sb.reverse().toString();
 	}
 	
-	private static long powOfTwo(String s) { // 111
-											   // 210
+	private static long powOfTwo(String s) {
+					
 		char[] sc = s.toCharArray();
 		long total = 0, temp = 0;
 		
@@ -55,5 +51,4 @@ public class AddBinaryString {
 		
 		return total;
 	}
-
 }

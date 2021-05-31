@@ -11,24 +11,19 @@ public class ArmstrongNumber {
 		System.out.println("Enter an integer to see if it is Armstrong");
 		int a = scan.nextInt();
 		if ( a != 0 ){
-			int b = a, sum = 0;
+			int a_in = a, sum = 0;
 			List<Integer> list = new ArrayList<>();
 			while( a != 0) { 
-				int r = a%10;
-				list.add(r);  
+				list.add(a%10);  
 				a /= 10;
 			}
 			for ( Integer w : list) {
 				sum += Math.pow(w, list.size());
 			}
-			System.out.println("The number is" + (( sum == b)?(""):( " not")) + " Armstrong number");
+			System.out.println("The number is" + (( sum == a_in)?(""):( " not")) + " Armstrong number");
 		}
-		else {
-			System.out.println("The number is not Armstrong number");
-		}
+		else System.out.println("The number is not Armstrong number");
+		
 		scan.close();
 	}
 }
-//for ( int i = 0 ; i < list.size() ; i++) {
-//sum += Math.pow(list.get(i), list.size());
-//}

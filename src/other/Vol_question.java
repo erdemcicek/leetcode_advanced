@@ -3,7 +3,6 @@ package other;
 import java.util.Scanner;
 
 /*
- 	That is the challenge for volunteers
    Create following pattern on the console
     A
    BAB  
@@ -13,7 +12,7 @@ EDCBABCDE
  DCBABCD
   CBABC
    BAB
-    A (
+    A 
  */
 
 public class Vol_question {
@@ -44,20 +43,5 @@ public class Vol_question {
 			}
 		}
 		scan.close();
-	
 	}
-	
 }
-
-
-/*
-private static void reverseOrderPrint(char c) { // including 'A' 
-		int x = c - 64; // 67, x=3
-		for ( int i = 0 ; i < x ; i++) System.out.print((char)(c - i));// 0,1,2
-	}
-	
-	private static void normalOrderPrint(char c) { // excluding 'A'
-		int x = c - 65; // 67, x=2
-		for ( int i = 0 ; i < x ; i++) System.out.print((char)(66 + i));// 0,1
-	}
- */

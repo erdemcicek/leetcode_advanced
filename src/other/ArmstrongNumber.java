@@ -14,7 +14,7 @@ public class ArmstrongNumber {
 			int a_in = a, sum = 0;
 			List<Integer> list = new ArrayList<>();
 			while( a != 0) { 
-				list.add(a%10);  
+				list.add(a%10);
 				a /= 10;
 			}
 			for ( Integer w : list) {

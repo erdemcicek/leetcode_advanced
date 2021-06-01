@@ -4,9 +4,7 @@ public class ReverseInteger {
 	
 	public static void main(String[] args) {
 		
-//		System.out.println(reverse(2,147,483,647));// 3021
-		//					       1,000,000,003									
-		// 2147483648
+//		System.out.println(reverse(2,147,483,647));// 3021									
 //		System.out.println(reverseWithString(Integer.MAX_VALUE));
 //		System.out.println(Integer.MAX_VALUE);
 		System.out.println(reverseWithStringTryCatch(2047483699));
@@ -40,8 +38,8 @@ public class ReverseInteger {
 		return 0;
 	}
 	
-	public static int reverseWithString(int x) { // 2147483647  pos
-												 // -2147483648 neg
+	public static int reverseWithString(int x) { 
+
 		boolean isNeg = (x<0)?(true):(false);
 		if ( x == Integer.MIN_VALUE) return 0;
 		if (isNeg) x = -x;
@@ -62,5 +60,4 @@ public class ReverseInteger {
 			return 0;
 		}
 	}
-
 }

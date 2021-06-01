@@ -11,8 +11,6 @@ public class ClimbStairs {
 		if ( n == 2) return 2;
 		
 		return climbStairs(n-1) + climbStairs(n-2);
-		// n=3 2 + 1
-		// n=4 f(3) + 2 
 	}
 	private static int climbStairs2(int n) {
 		
@@ -26,5 +24,4 @@ public class ClimbStairs {
 		}
 		return steps[n];
 	}
-
 }

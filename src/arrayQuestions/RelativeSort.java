@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.List;
 
 /*
-		 Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1.
-		 Sort the elements of arr1 such that the relative ordering of items in arr1 are the same as in arr2. 
-		 Elements that don't appear in arr2 should be placed at the end of arr1 in ascending order.
+	Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1.
+	Sort the elements of arr1 such that the relative ordering of items in arr1 are the same as in arr2. 
+	Elements that don't appear in arr2 should be placed at the end of arr1 in ascending order.
 		 
-		 Input: arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]
-		 Output: [2,2,2,1,4,3,3,9,6,7,19]
+	Input: arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]
+	Output: [2,2,2,1,4,3,3,9,6,7,19]
  */
 
 public class RelativeSort {
@@ -50,7 +50,6 @@ public class RelativeSort {
 		
 	private static int[] relativeSort(int[] arr1, int[] arr2) {
 		
-//		Arrays.stream(arr1).distinct().collect(t->t=t, List::add);
 		int[] arr3 = new int[arr1.length];
 		Arrays.sort(arr1);
 		// arr1.sort  [1, 2, 2, 2, 3, 3, 4, 6, 7, 9, 19]
@@ -74,11 +73,6 @@ public class RelativeSort {
 			}
 		}
 		
-		
 		return arr3;
 	}
-	
-	
-
-
 }

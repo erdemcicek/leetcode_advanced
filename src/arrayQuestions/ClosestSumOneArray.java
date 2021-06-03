@@ -26,14 +26,7 @@ public class ClosestSumOneArray {
 		System.out.println(Arrays.toString(closestPair(arr, 11)));
 		
 	}
-	/*
-	         	1 2 3 4 5  t=10
-	        1   - - - - -
-	        2   - - - - -
-	        3   - - - - -
-	        4   - - - - -
-	        5   - - - - -
-	 */
+	
 	public static int[] closestPair(int[] nums, int target) {
 		
 		Arrays.sort(nums);

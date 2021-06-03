@@ -59,46 +59,4 @@ public class ClosestSumOneArray {
 		}
 		return closestPair;
 	}
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Arrays.sort(nums);
-		int i = 0, j = nums.length-1;
-		int smallestDiff = Math.abs(nums[0] * 2 - target);
-		int[] closestPair = { nums[0], nums[1] };
-		
-		while( i < nums.length && j >= 0 ) {
-			
-			int currentDiff = nums[i] + nums[j] - target;
-			
-	///		if ( i == j) continue;
-			if ( Math.abs(currentDiff) < smallestDiff && i != j) {
-				smallestDiff = Math.abs(currentDiff);
-				closestPair[0] = nums[i];
-				closestPair[1] = nums[j];
-			}
-			
-			if ( currentDiff == 0) return closestPair;
-			else if ( currentDiff < 0 ) i++;
-			else j--;
-		}
-		return closestPair;
-*/

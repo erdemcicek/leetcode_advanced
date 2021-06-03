@@ -11,9 +11,6 @@ public class RepeatedSubstringPattern {
 	public static void main(String[] args) {
 		
 		System.out.println(repSubPattern("abaaba"));
-//		String a = "solidsolid";
-//		System.out.println(a.substring(0, 5).hashCode());
-//		System.out.println(a.substring(5).hashCode());
 		
 	}
 		private static boolean repSubPattern(String s) {
@@ -26,31 +23,18 @@ public class RepeatedSubstringPattern {
 			if ( n % t == 0) {
 				String temp = s.substring(0, t); 
 				int start = t;
-				String current;
-				boolean control = true;
+				int hash = temp.hashCode();
+				int currHash = hash;
 				
-				while(start != n) {
-					current = s.substring(start, start + t);
-					if (!current.equals(temp)) {
-						control = false;
-						break;
-					}
+				
+				while(start != n  && currHash == hash) {
+					temp = s.substring(start, start + t);
+					currHash = temp.hashCode();
 					start = start + t;
 				}
-				if(control) return true;
+				if(currHash == hash ) return true;
 			}
 		}
 		return false;
 	}
 }
-
-
-//int hash = temp.hashCode();
-//int currHash = hash;
-
-//while(start != n && currHash == hash) {
-//temp = s.substring(start, start + t); // 2,4
-//currHash = temp.hashCode(); // 
-//start = start + t; // 2+2 
-//}
-//if (currHash == hash) return true;

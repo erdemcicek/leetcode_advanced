@@ -4,10 +4,10 @@ public class FibonacciMemoizedSolution {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(fibBottomUp(100)); // 1,1,2,3,5,8
+		System.out.println(fibBottomUp(100)); 
 //		System.out.println(fibMemo(12));
 	}
-	public static long fibBottomUp(int n) {
+	private static long fibBottomUp(int n) {
 		
 		if ( n == 1 || n == 2) return 1;
 		long[] bottomUp = new long[n+1];
@@ -18,7 +18,7 @@ public class FibonacciMemoizedSolution {
 		}
 		return bottomUp[n];
 	}
-	public static int fibMemo(int n) {
+	private static int fibMemo(int n) {
 		
 		int[] memo = new int[n+1];
 		return fib2(n, memo);

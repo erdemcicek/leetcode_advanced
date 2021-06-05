@@ -1,9 +1,5 @@
 package stringManipulation;
 
-// Write a program that returns the number of unique longest palindrome/s that a given String contains.
-// Example 1 : "abcdeffedxyx" should return 2 ==> "deffed" , "xyx"
-// Example 2 : "abbcddeff"    should return 3 ==> "bb", "dd", "ff"
-
 public class CountOfPalindromes {
 	
 	public static void main(String[] args) {
@@ -11,7 +7,7 @@ public class CountOfPalindromes {
 		System.out.println(countOfPal("abbcddeff"));
 		System.out.println(countOfPal("abcdeffedxyx"));
 	}
-	public static int countOfPal(String s) {
+	private static int countOfPal(String s) {
 		
 		int count = 0;
 		
@@ -26,9 +22,7 @@ public class CountOfPalindromes {
 		}
 		return count;
 	}
-	
-	
-	public static int[] maxLengthOfPal(String s) { 
+	private static int[] maxLengthOfPal(String s) { 
 		
 		int start = 0 , end = 0;
 		
@@ -42,10 +36,9 @@ public class CountOfPalindromes {
 			}
 		}
 		return new int[] {start, end+1};
-
 	}
 	
-	public static int expandFromMiddle(String s, int left, int right) { 
+	private static int expandFromMiddle(String s, int left, int right) { 
 		
 		if ( s == null || s.length() == 0) return 0;
 		
@@ -55,5 +48,4 @@ public class CountOfPalindromes {
 		}
 		return right - left - 1;
 	}
-
 }

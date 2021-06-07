@@ -18,9 +18,7 @@ public class Hr_Map_Question {
 			map1.putIfAbsent(name, phone);
 			in.nextLine();
 		}
-//		while(in.hasNext()) {
-//			String s=in.nextLine();
-//		}
+
 		for ( int i = 0 ; i < n ; i++) {
 			String input = in.nextLine();
 			if ( map1.containsKey(input)) {
@@ -32,5 +30,4 @@ public class Hr_Map_Question {
 		in.close();
 		
 	}
-
 }

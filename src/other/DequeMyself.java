@@ -8,11 +8,6 @@ import java.util.Scanner;
 
 public class DequeMyself {
 	
-	/*
-	 		6 3
-	 		5 3 5 2 3 2
-	 */
-	
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
@@ -47,5 +42,4 @@ public class DequeMyself {
         scan.close();
           
 	}
-
 }

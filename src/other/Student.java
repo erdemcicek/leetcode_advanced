@@ -67,8 +67,5 @@ class Priorities {
 			}
 			return students;
 		}
-	}
-	
-	
-	
+	}	
 }

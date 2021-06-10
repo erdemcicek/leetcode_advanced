@@ -5,7 +5,7 @@ public class FibonacciMemoizedSolution {
 	public static void main(String[] args) {
 		
 		System.out.println(fibBottomUp(100)); 
-//		System.out.println(fibMemo(12));
+		System.out.println(fibMemo(12));
 	}
 	private static long fibBottomUp(int n) {
 		
@@ -33,5 +33,4 @@ public class FibonacciMemoizedSolution {
 		}
 		return result;
 	}
-
 }

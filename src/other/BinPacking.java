@@ -34,7 +34,6 @@ public class BinPacking {
 	
 	public static void main(String[] args) {
 		
-		
 		List<Integer> mylist = new ArrayList<>(); // full
 		List<Integer> list = new ArrayList<>();	  // empty
 		List<Integer> idx = new ArrayList<>();	  // empty
@@ -58,7 +57,7 @@ public class BinPacking {
 		
 		while ( !mylist.isEmpty()) {
 			int contNum = 0;
-			for ( int i = 0 ; i < mylist.size() ; ) {  // 2 2 4 5 4 3 8 1 4
+			for ( int i = 0 ; i < mylist.size() ; ) { 
 				int sum = mylist.get(i);  
 				list.add(mylist.get(i)); 
 				mylist.remove(mylist.get(i)); 
@@ -85,9 +84,7 @@ public class BinPacking {
 		System.out.println("Thank you. Have a good flight");
 		scan.close();
 	}
-	public static void printContainer(List<Integer> list) {
-		for ( int i = 0 ; i < list.size() ; i++) {
-			System.out.print(list.get(i) + " ");
-		}
+	private static void printContainer(List<Integer> list) {
+		for ( int i = 0 ; i < list.size() ; i++) System.out.print(list.get(i) + " ");
 	}
 }

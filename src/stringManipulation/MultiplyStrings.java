@@ -1,12 +1,10 @@
 package stringManipulation;
 
 /*
- Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
-
-Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
-
-num1 and num2 consist of digits only.
-Both num1 and num2 do not contain any leading zero, except the number 0 itself.
+ 	Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
+	Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
+	num1 and num2 consist of digits only.
+	Both num1 and num2 do not contain any leading zero, except the number 0 itself.
  */
 
 import java.util.Arrays;
@@ -18,16 +16,7 @@ public class MultiplyStrings {
 		System.out.println(multStrings("702", "30"));
 		
 	}
-	public static String multStrings(String s1, String s2) { // "12" , "37"
-		/*
-		     12
-		     37
-		   ------ 
-		     84
-		    36
-		  -------
-		    444
-		 */
+	private static String multStrings(String s1, String s2) { 
 		
 		char[] c1 = s1.toCharArray();
 		char[] c2 = s2.toCharArray();

@@ -8,11 +8,10 @@ public class GetInput {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-
 		boolean invalidInput = true;
 		do {
 			try {
-				int input = scan.nextInt(); // If you enter a double here, you'll get InputMismatchException
+				int input = scan.nextInt(); 
 				System.out.println("The number is " + input);
 				invalidInput = false;
 			}catch(InputMismatchException e) {

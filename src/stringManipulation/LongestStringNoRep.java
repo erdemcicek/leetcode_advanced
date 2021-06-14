@@ -10,9 +10,8 @@ public class LongestStringNoRep {
 
 	public static void main(String[] args) {
 		System.out.println(lengthOfLongestSub("pww"));
-		
 	}
-	public static int lengthOfLongestSub(String s) {
+	private static int lengthOfLongestSub(String s) {
 		if ( s == null || s.length() == 0) return 0;
 		int i = 0, j = 0, max = 0;
 		Set<Character> set = new HashSet<>();

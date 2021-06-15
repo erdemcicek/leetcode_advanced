@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 /*
    Create following pattern on the console
-    A
-   BAB  
-  CBABC
- DCBABCD
-EDCBABCDE
- DCBABCD
-  CBABC
-   BAB
-    A 
+		    A
+		   BAB  
+		  CBABC
+		 DCBABCD
+		EDCBABCDE
+		 DCBABCD
+		  CBABC
+		   BAB
+		    A 
  */
 
 public class Vol_question {

@@ -27,7 +27,6 @@ public class RockPaperScissor {
 		Scanner scan = new Scanner(System.in);
 		int countUserWin = 0 , countComWin = 0;
 		while ( countUserWin < 5 && countComWin < 5) {
-//		while ( Math.abs(countUserWin - countComWin) < 3 ) {
 			System.out.println("Enter from 0 to 2 -> scissor (0), rock (1), paper (2):");
 			int user = scan.nextInt();
 			int com = (int)(Math.random() * 3);
@@ -47,7 +46,8 @@ public class RockPaperScissor {
 		if ( countUserWin > countComWin) {
 			System.out.println("Congradulations!!! You won!!!" + "\nFinal score : You :" + countUserWin + " Computer :" + countComWin);
 		}
-		else System.out.println("Unfortunately you lost." + "\nFinal score : You :" + countUserWin + " Computer :" + countComWin);
+		else 
+			System.out.println("Unfortunately you lost." + "\nFinal score : You :" + countUserWin + " Computer :" + countComWin);
 		scan.close();
 	}
 }

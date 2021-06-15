@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Hangman {
 	/*
-	 	write a hangman game that randomly generates a word and promts user to guess one letter at a time, 
+	 	Write a hangman game that randomly generates a word and promts user to guess one letter at a time, 
 	 	as presented in the
 	 	simple run. Each letter in the word is displayed as an asterisk. When the user makes a correct guess, 
 	 	the actual letter
@@ -15,8 +15,6 @@ public class Hangman {
 	 */
 
 	public static void main(String[] args) {
-		
-// scan.close() kaldir oyle oyna, hata veriyor yoksa
 		
 		String[] words = {"computer","notebook","calendar","dashboard","utility","highlight"};
 		String right = words[(int)(Math.random()*words.length)];

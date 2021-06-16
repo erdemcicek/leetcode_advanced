@@ -36,40 +36,35 @@ public class WordDictionary {
 
 		
 		List<String> list = new ArrayList<>();
-		list.add("e");
-		list.add("ee");
-		list.add("eee");
-		list.add("eeee");
-		list.add("e");
+		list.add("car");
+		list.add("ca");
+		list.add("rs");
 //		System.out.println(wordBreak1("applepenapp", list));
 //		System.out.println(canConstruct("cars", list));
+		System.out.println(wordBreak2("cars", list));
 //		System.out.println(wordBreak2("eeeeeeeeeeeeeeeeeef", list));
-		System.out.println(wordBreak2("eeeeeeeeeeeeeeeeeeeeeeeef", list));
+//		System.out.println(wordBreak2("eeeeeeeeeeeeeeeeeeeeeeeef", list));
 	}
 	
 	
 	private static boolean wordBreak2(String s, List<String> wordDict) {
-        int n = s.length();
-        boolean [] dp = new boolean[n + 1];
-        
-        dp[n] = true;
-        for(int i= n - 1 ; i >= 0 ; i-- ){
-            for(String w: wordDict){
-                
-                if(i + w.length() <= n  && s.substring(i,i+ w.length()).equals(w))
-                    dp[i] = dp[i + w.length()];
-                if(dp[i])
-                   break;
-               
-                
-            }
-        }
-        return dp[0];
+		int n = s.length();
+		boolean [] dp = new boolean[n + 1];
+
+		dp[n] = true;
+		for(int i= n - 1 ; i >= 0 ; i-- ){
+		    for(String w: wordDict){
+			if(i + w.length() <= n  && s.substring(i,i+ w.length()).equals(w))
+			    dp[i] = dp[i + w.length()];
+			if(dp[i])
+			   break;
+		    }
+		}
+		return dp[0];
 	}
 	
 	private static boolean canConstruct(String target, List<String> list) { 
 		
-		// canConstruct("", list) ==> true
 		if ( target.equals("")) return true;
 		
 		for ( int i = 0 ; i < list.size() ; i++) { 
@@ -97,5 +92,4 @@ public class WordDictionary {
 		}
 		return false;
 	}
-	
 }

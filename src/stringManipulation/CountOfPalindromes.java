@@ -10,11 +10,9 @@ public class CountOfPalindromes {
 	private static int countOfPal(String s) {
 		
 		int count = 0;
-		
 		StringBuilder sb = new StringBuilder(s);
 		
 		while( sb.length() != 0) {
-			
 			int palStart = maxLengthOfPal(sb.toString())[0];
 			int palEnd = maxLengthOfPal(sb.toString())[1];
 			if (palEnd - palStart > 1) count++;
@@ -22,6 +20,7 @@ public class CountOfPalindromes {
 		}
 		return count;
 	}
+	
 	private static int[] maxLengthOfPal(String s) { 
 		
 		int start = 0 , end = 0;

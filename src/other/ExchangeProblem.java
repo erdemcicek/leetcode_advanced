@@ -17,7 +17,7 @@ public class ExchangeProblem {
 		
 	}
 
-	public static boolean canExchange(int target, List<Integer> list, Map<Boolean, List<Integer>> hm) {
+	private static boolean canExchange(int target, List<Integer> list, Map<Boolean, List<Integer>> hm) {
 		
 		List<Integer> bank = new ArrayList<>();
 		

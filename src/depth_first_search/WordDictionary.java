@@ -6,7 +6,6 @@ import java.util.List;
 /*
  	Given a string s and a dictionary of strings wordDict, return true if s can be segmented into
  	a space-separated sequence of one or more dictionary words.
-
 	Note that the same word in the dictionary may be reused multiple times in the segmentation.
 	
 	Input: s = "leetcode", wordDict = ["leet","code"]
@@ -21,20 +20,16 @@ import java.util.List;
 	Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
 	Output: false
 	
-		Input:
-		"cars"
-		["car","ca","rs"]
-		Output:
-		false
-		Expected:
-		true
+	Input:"cars"
+	["car","ca","rs"]
+	Output: false
+	Expected: true
  */
 
 public class WordDictionary {
 	
 	public static void main(String[] args) {
 
-		
 		List<String> list = new ArrayList<>();
 		list.add("car");
 		list.add("ca");
@@ -43,9 +38,7 @@ public class WordDictionary {
 //		System.out.println(canConstruct("cars", list));
 		System.out.println(wordBreak2("cars", list));
 //		System.out.println(wordBreak2("eeeeeeeeeeeeeeeeeef", list));
-//		System.out.println(wordBreak2("eeeeeeeeeeeeeeeeeeeeeeeef", list));
 	}
-	
 	
 	private static boolean wordBreak2(String s, List<String> wordDict) {
 		int n = s.length();

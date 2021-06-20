@@ -6,13 +6,11 @@ import java.util.Arrays;
 public class MountainArray {
 	public static void main(String[] args) {
         
-		int[] arr = {0, 2, 5};
+		int[] arr = {0, 2, 5, 4, 1};
 		int[] brr = {5, 2, 7, 1, 4};
 		System.out.println(isMountain(arr));
 		System.out.println("------------");
-		System.out.println(isMountain(brr));
-		
-		
+		System.out.println(isMountain(brr));	
     }
 	private static boolean isMountain(int[] arr) {
 		
@@ -28,6 +26,4 @@ public class MountainArray {
 		}
 		return true;
 	}
-	
 }
-

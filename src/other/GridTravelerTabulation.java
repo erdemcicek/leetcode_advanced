@@ -5,9 +5,8 @@ public class GridTravelerTabulation {
 	public static void main(String[] args) {
 		
 		System.out.println(gridTraTab(18, 18));
-		
 	}
-	public static long gridTraTab(int m, int n) {
+	private static long gridTraTab(int m, int n) {
 		
 		long[][] table = new long[m+1][n+1];
 		

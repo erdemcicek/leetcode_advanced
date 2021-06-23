@@ -3,14 +3,14 @@ package arrayQuestions;
 public class ContainsArray {
 	
 	/*
-	 		Given two arrays of ints sorted in increasing order, outer and inner, 
-	 		return true if all of the numbers in inner appear in outer. 
-	 		The best solution makes only a single "linear" pass of both arrays, 
-	 		taking advantage of the fact that both arrays are already in sorted order.
+	 	Given two arrays of ints sorted in increasing order, outer and inner, 
+	 	return true if all of the numbers in inner appear in outer. 
+	 	The best solution makes only a single "linear" pass of both arrays, 
+	 	taking advantage of the fact that both arrays are already in sorted order.
 	 		
-			linearIn([1, 2, 4, 6], [2, 4])  true
-			linearIn([1, 2, 4, 6], [2, 3, 4])  false
-			linearIn([1, 2, 4, 4, 6], [2, 4])  true
+		linearIn([1, 2, 4, 6], [2, 4])  true
+		linearIn([1, 2, 4, 6], [2, 3, 4])  false
+		linearIn([1, 2, 4, 4, 6], [2, 4])  true
 	 */
 
 	public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class ContainsArray {
 		System.out.println(doesContain(a,b));
 		
 	}
-	public static boolean doesContain(int[] a , int[] b) {
+	private static boolean doesContain(int[] a , int[] b) {
 		
 		boolean isStart = false;
 		int count = 0, t = 0;
@@ -44,6 +44,3 @@ public class ContainsArray {
 		return false;
 	}
 }
-//int ind = 0, count = 0, t = 0;
-//ind = i;
-//			t = j-i;	

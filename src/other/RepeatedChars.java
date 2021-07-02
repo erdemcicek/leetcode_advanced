@@ -10,6 +10,8 @@ public class RepeatedChars {
 	public static void main(String[] args) {
 		
 		findRepeated1("aaabbbc");
+		findRepeated2("aaabbbc");
+		findRepeated3("aaabbbc");
 		
 	}
 	private static void findRepeated1(String s) {
@@ -28,7 +30,6 @@ public class RepeatedChars {
 		String t[]=s.split("");
 		int cont[]=new int[t.length];
 		
-		
 		for (int i = 0; i < cont.length-1; i++) {
 			if(cont[i]==-1) continue;
 			for (int j = i+1; j < cont.length; j++) {
@@ -42,8 +43,6 @@ public class RepeatedChars {
 			if(cont[i]>0) {
 				System.out.print(t[i]+" ");
 			}
-			
 		}
 	}
-
 }

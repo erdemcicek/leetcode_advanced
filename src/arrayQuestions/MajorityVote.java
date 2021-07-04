@@ -12,7 +12,7 @@ public class MajorityVote {
 		
 	}
 	// 1.Way
-	public static int majorityElement(Integer[] nums) {
+	private static int majorityElement(Integer[] nums) {
 		
 		int candidate = 0;
 		int count = 0;
@@ -27,13 +27,13 @@ public class MajorityVote {
 						  // you have to check this as shown below
 		return doesHaveMaj(nums, candidate)?(candidate):0;
 	}
-	public static boolean doesHaveMaj(Integer[] nums, int candidate) {
+	private static boolean doesHaveMaj(Integer[] nums, int candidate) {
 		
 		return Arrays.stream(nums).filter(t->t==candidate).count() > nums.length/2;
 	}
 	
 	// 2.Way
-	public static int moreThanHalf(Integer arr[]) {
+	private static int moreThanHalf(Integer arr[]) {
 
 //		List<Integer>list=Arrays.asList(arr); 
 		

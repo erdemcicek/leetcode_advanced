@@ -18,11 +18,11 @@ public class RelativeSort {
 		
 		int[] arr1 = {2,3,1,3,2,4,6,7,9,2,19};
 		int[] arr2 = {2,1,4,3,9,6};
-//		System.out.println(Arrays.toString(relativeSort(arr1, arr2)));
-		System.out.println(Arrays.toString(relativeS(arr1, arr2)));
+		System.out.println(Arrays.toString(relativeSort1(arr1, arr2)));
+		System.out.println(Arrays.toString(relativeSort2(arr1, arr2)));
 	}
 	
-	private static int[] relativeS(int[] a, int[] b) {
+	private static int[] relativeSort1(int[] a, int[] b) {
 		
 		int ans[] = new int[a.length];
 		int z = 0;
@@ -48,7 +48,7 @@ public class RelativeSort {
 		return ans;
 	}
 		
-	private static int[] relativeSort(int[] arr1, int[] arr2) {
+	private static int[] relativeSort2(int[] arr1, int[] arr2) {
 		
 		int[] arr3 = new int[arr1.length];
 		Arrays.sort(arr1);
@@ -72,7 +72,6 @@ public class RelativeSort {
 				y--;
 			}
 		}
-		
 		return arr3;
 	}
 }

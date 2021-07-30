@@ -17,7 +17,7 @@ public class HowSum {
 		System.out.println(howSum(90, list, hm));
 	}
 	
-	public static ArrayList<Integer>howSum(int targetSum, List<Integer> list, Map<Integer, ArrayList<Integer>> hm) {
+	private static ArrayList<Integer>howSum(int targetSum, List<Integer> list, Map<Integer, ArrayList<Integer>> hm) {
 		
 		ArrayList<Integer> emp = new ArrayList<>();
 		if ( hm.containsKey(targetSum)) return hm.get(targetSum);

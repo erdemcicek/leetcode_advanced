@@ -19,8 +19,6 @@ public class Tribonacci {
 		for(int i = 3 ; i <= n ; i++) {
 			tri[i] = tri[i-1] + tri[i-2] + tri[i-3];
 		}
-		
 		return tri[n];
 	}
-
 }

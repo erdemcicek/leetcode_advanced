@@ -17,7 +17,6 @@ public class ComputeJoint {
 		int y = sum(b);
 		int z = 0;
 		
-		
 		while( x != y) {
 			x = sum(x);
 			y = sum(y);
@@ -27,6 +26,7 @@ public class ComputeJoint {
 		
 		return z;
 	}
+	
 	private static int sum(int a) {
 		
 		int total = a;
@@ -38,7 +38,6 @@ public class ComputeJoint {
 		
 		return total;
 	}
-	
 	
 	private static int minInterval(int[] nums) {
 		
@@ -58,22 +57,5 @@ public class ComputeJoint {
 		
 		return comp;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

@@ -1,4 +1,4 @@
-package other;
+package udemytimbuch;
 
 public class DiagonalStars {
 	

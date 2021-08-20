@@ -3,8 +3,11 @@ package udemytimbuch;
 public class DiagonalStars {
 	
 	public static void main(String[] args) {
+		
 		printStars(5);
+		printStars(8);
 	}
+	
 	private static void printStars(int n) {
 		
 		if(n<5) System.out.println("Invalid Value");

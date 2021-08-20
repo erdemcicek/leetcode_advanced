@@ -25,9 +25,6 @@ public class RandomPasswordGenerator {
 		char[] numbers = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 		char[] symbols = {'!', '#', '$', '%', '&', '(', ')', '*', '+'};
 		
-		// 4, 2, 2
-		
-		
 		StringBuilder sb = new StringBuilder();
 		
 		List<String> mylist = new ArrayList<>();
@@ -54,9 +51,7 @@ public class RandomPasswordGenerator {
 			if ( n_let == 0 ) mylist.remove("L");
 			if ( n_num == 0 ) mylist.remove("N");
 			if ( n_sym == 0 ) mylist.remove("S");
-
 		}
-		
 		System.out.println(sb);
 		
 		// 2.Way ==> Collections.shuffle()
@@ -68,9 +63,7 @@ public class RandomPasswordGenerator {
 //		List<String> x = Arrays.asList(sb.toString().split(""));
 //		Collections.shuffle(x);
 //		for(String w: x ) System.out.print(w);
-		
-		
+
 		scan.close();
 	}
-
 }

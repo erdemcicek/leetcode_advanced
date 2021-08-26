@@ -1,6 +1,5 @@
 package other2;
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,7 +9,6 @@ import java.util.Scanner;
 public class RosettaStone {
 	
 	static Scanner scan = new Scanner(System.in);
-
 	public static void main(String[] args) {
 		// Hola Mundo
 		// Mundo | World
@@ -31,15 +29,18 @@ public class RosettaStone {
 		
 		Map<String, String> rosettas = new HashMap<>();	
 		String firstLine = full.get(0);
+		
 		for(int i = 1; i<full.size(); i++) { // to skip first line
 			String firstEntry = full.get(i).split(" \\| ")[0];
 			String secondEntry = full.get(i).split(" \\| ")[1];
 			rosettas.put(firstEntry, secondEntry);
 		}
+		
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0 ; i < firstLine.split(" ").length ; i++) { // "Hola" "Mundo"
 			sb.append(rosettas.get(firstLine.split(" ")[i]) + " ");
 		}
+		
 		System.out.println(sb.substring(0, sb.length()-1));
 		scan.close();
 	}

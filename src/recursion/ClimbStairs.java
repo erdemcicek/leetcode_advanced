@@ -3,8 +3,10 @@ package recursion;
 public class ClimbStairs {
 	
 	public static void main(String[] args) {
-		
+		climbStairs(3);
+		climbStairs2(3);
 	}
+	
 	private static int climbStairs(int n) {
 		
 		if ( n == 1) return 1;
@@ -12,6 +14,7 @@ public class ClimbStairs {
 		
 		return climbStairs(n-1) + climbStairs(n-2);
 	}
+	
 	private static int climbStairs2(int n) {
 		
 		if(n==1) return 1;

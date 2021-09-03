@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class RosettaStone {
 	
-	static Scanner scan = new Scanner(System.in);
+	private static Scanner scan = new Scanner(System.in);
 	public static void main(String[] args) {
 		// Hola Mundo
 		// Mundo | World

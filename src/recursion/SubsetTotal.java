@@ -9,12 +9,12 @@ public class SubsetTotal {
 		int[] arr = { 2, 4, 6, 5, 10, 2, 4};
 		System.out.println(countSets(arr, 16));
 	}
-	public static int countSets(int[] arr, int total) {
+	private static int countSets(int[] arr, int total) {
 		Map<String, Integer> hm = new HashMap<>();
 		return rec(arr, total, arr.length-1, hm);
 	}
 	
-	public static int rec(int[] arr, int total, int i, Map<String, Integer> hm) {
+	private static int rec(int[] arr, int total, int i, Map<String, Integer> hm) {
 		
 		String key = total + ":" + i;
 		int to_return;

@@ -37,11 +37,11 @@ public class NextGreater {
         Map<Integer,Integer> nextGreater = new HashMap<>();
         Deque<Integer> stack = new LinkedList<>();
         
-        nextGreater.put(input[n-1],-1); // 2, -1
-        stack.push(input[n-1]);			// 2
+        nextGreater.put(input[n-1],-1);
+        stack.push(input[n-1]);	
         
         for(int i=n-2;i>=0;i--) {
-            while(stack.size()>0 && stack.peek() < input[i]) { // 2 < 3
+            while(stack.size()>0 && stack.peek() < input[i]) {
                 stack.pop();
             }
             nextGreater.put(input[i], stack.isEmpty() ? -1 : stack.peek());

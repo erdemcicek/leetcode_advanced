@@ -18,9 +18,9 @@ public class MatchCases {
 				}
 			}
 		}
-	
 		return max > 0 ? max : -1;
 	}
+	
 	private static boolean isMatch(String s) {
 		
 		for(char c: s.toCharArray()) {
@@ -30,5 +30,4 @@ public class MatchCases {
 		}
 		return true;
 	}
-
 }

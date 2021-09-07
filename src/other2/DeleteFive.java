@@ -31,7 +31,4 @@ public class DeleteFive {
 		Collections.sort(list);
 		return list.get(list.size()-1);
 	}
-	
-
-
 }

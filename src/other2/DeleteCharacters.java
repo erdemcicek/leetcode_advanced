@@ -14,6 +14,7 @@ public class DeleteCharacters {
 		System.out.println(deleteChar("eeee"));         // 0
 		System.out.println(deleteChar("aaaabbbb"));     // 1
 	}
+	
 	private static int deleteChar(String s) {
 		
 		// ccaaffddecee --> 6 all 'e' all 'f' one 'd' ==> ccaadc
@@ -22,11 +23,6 @@ public class DeleteCharacters {
 		// f --> 2 ==> all
 		// d --> 2 ==> 1
 		// e --> 3 ==> all
-		// example      --> 4
-		// e --> 2
-		// x --> 1
-		// a --> 
-		
 		
 		Map<String, Integer> map = new HashMap<>();
 		for(String w: Arrays.asList(s.split(""))) {
@@ -43,5 +39,4 @@ public class DeleteCharacters {
 		}		
 		return s.length() - map.values().stream().filter(t->t>0).reduce(0, (x,y)->x+y) ;
 	}
-
 }

@@ -1,11 +1,11 @@
 package other2;
 
-		//ccaaffddecee --> 6 all 'e' all 'f' one 'd' ==> ccaadc
-		// c --> 3
-		// a --> 2
-		// f --> 2 ==> all
-		// d --> 2 ==> 1
-		// e --> 3 ==> all
+	//ccaaffddecee --> 6 all 'e' all 'f' one 'd' ==> ccaadc
+	// c --> 3
+	// a --> 2
+	// f --> 2 ==> all
+	// d --> 2 ==> 1
+	// e --> 3 ==> all
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -20,8 +20,8 @@ public class DeleteCharacters {
 		System.out.println(deleteChar("example"));      // 4
 		System.out.println(deleteChar("eeee"));         // 0
 		System.out.println(deleteChar("aaaabbbb"));     // 1
-		System.out.println(deleteChar(""));				// 0
-		System.out.println(deleteChar(null));			// 0
+		System.out.println(deleteChar(""));		// 0
+		System.out.println(deleteChar(null));		// 0
 	}
 	
 	private static int deleteChar(String s) {
@@ -41,9 +41,7 @@ public class DeleteCharacters {
 				if(map.get(w) == 0) break;
 			}
 		}
-		
 //		return s.length() - map.values().stream().reduce(0, (x,y)->x+y) ;             // with reduce()
 		return s.length() - map.values().stream().mapToInt(Integer::intValue).sum();  // with sum()
-
 	}
 }

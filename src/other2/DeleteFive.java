@@ -10,13 +10,43 @@ public class DeleteFive {
 		System.out.println(deleteFive(15958));
 		System.out.println(deleteFive(-5859));
 		System.out.println(deleteFive(-5000));
+//		System.out.println(deleteFive(515)); // 51
 	}
 	// 15958 -> 1958
 	// -5859 -> -589
 	// -5000 -> 0
-	private static int deleteFive(int N) {
+	
+	private static int deleteFive(int n) {
 		
-		String s = "" + N;
+		if ( n == 0 ) return 0;
+		
+		int n_in = n, len = 0, pointer = 0, comp = Integer.MIN_VALUE;
+		
+		// Finding the number of digits of parameter
+		while ( n_in != 0 ) {
+			n_in /= 10;
+			len++;
+		}
+		
+		while( len != pointer ) { 
+			int currentDigit = ( n % (int)Math.pow(10, pointer+1) )  / (int)Math.pow(10, pointer) ; 
+			if ( currentDigit == 5  || currentDigit == -5) {
+				int firstPart = ( n / (int)Math.pow(10, pointer+1)) * (int)Math.pow(10, pointer); 
+				int lastPart = n % (int)Math.pow(10, pointer); //   8
+				int res = firstPart + lastPart;
+				if ( res > comp) comp = res;
+			}
+			pointer++;
+		}
+		
+		return comp;
+	}
+	
+	
+	
+	private static int deleteFiveWithList(int n) {
+		
+		String s = "" + n;
 		String st = new String(s);
 		int val;
 		List<Integer> list = new ArrayList<>();

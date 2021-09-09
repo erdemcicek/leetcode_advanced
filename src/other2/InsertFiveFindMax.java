@@ -16,24 +16,20 @@ public class InsertFiveFindMax {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(insertFiveFindMax(-5)); // ilkKisim * pow 10 
-		// 7 pow 4
-		// 76 pow 3
-		// 764 pow 2
-		// 7643 pow 1
+		System.out.println(insertFiveFindMax(1234));  
+		
 	}
 	
 	private static int insertFiveFindMax(int n) {
 
 		if ( n == 0 ) return 50;
-		
+
 		int n_in = n, len = 0, comp = Integer.MIN_VALUE;
 		
 		while( n_in != 0 ) {
 			n_in /= 10;
 			len++;
 		} 
-		
 		while( len != -1 ) {
 			
 			int fiveCaseR = (int) (5 * Math.pow(10, len)); // 50000, 5000, 500, 50, 5
@@ -46,8 +42,6 @@ public class InsertFiveFindMax {
 			
 			len--;
 		}
-
 		return comp;
 	}
-
 }

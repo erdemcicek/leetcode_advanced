@@ -6,7 +6,6 @@ public class MatchCases {
 //		System.out.println(matchCases("TacoCat"));   // -1
 //		System.out.println(matchCases("azABaabza")); // 5
 //		System.out.println(matchCases("AcZCbaBz"));  // 8
-//		System.out.println(matchCasesSBuilder("azABaabzaxg"));
 	//	System.out.println(isMatch("AcZCbaBz"));
 		System.out.println(matchCases("azABaabzaxZ"));
 	}
@@ -33,35 +32,5 @@ public class MatchCases {
 		}
 		return true;
 	}
-	
-	private static int matchCasesSBuilder(String s) {
-		
-		if(s == null) return -1;
-		
-		StringBuilder sb = new StringBuilder(s);
-		while(!isMatch(sb.toString())) {
-			if(isMatch(sb.substring(0, sb.length()-1))) { // sondaki harf bozuyor
-				sb.deleteCharAt(sb.length()-1);
-				System.out.println("behind");
-			}else if(isMatch(sb.substring(1))) { // ilk harf bozuyor
-				sb.deleteCharAt(0);
-				System.out.println("front");
-			}else {
-				System.out.println("both");
-				sb.deleteCharAt(0);
-				if(sb.length() != 0) sb.deleteCharAt(sb.length()-1);
-			}
-		}
-		System.out.println(sb);
-		return sb.length() > 0 ? sb.length() : -1;
-		
-	}
-	
-	
-	
-	
-	
-	
-	
 	
 }

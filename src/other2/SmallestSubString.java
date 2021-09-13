@@ -38,9 +38,6 @@ public class SmallestSubString {  // azABaabzaxZ
         Arrays.fill(capital, 0);
         Arrays.fill(lowercase, 0);
         
-//        System.out.println(Arrays.toString(capital));
-//        System.out.println(Arrays.toString(lowercase));
-        
         int minWindowLength = Integer.MAX_VALUE;
         int minWindowStart = -1;
         int minWindowEnd = -1;
@@ -115,14 +112,6 @@ public class SmallestSubString {  // azABaabzaxZ
 //        System.out.println(findSmallest("azABaabza"));
 //        System.out.println(findSmallest("TacoCat"));
 //        System.out.println(findSmallest("AcZCbaBz"));
-        System.out.println(findSmallest("azABaabzaxZ")); // -1
-
-//    	System.out.println(false^true^true);   // false
-//    	System.out.println(false^true^false);  // true
-//    	System.out.println(true^true^true);    // true
-//    	System.out.println(true^true); 		   // false
-    	
-
+        System.out.println(findSmallest("azABaabzaxZ")); // -1   	
     }
 }
-        

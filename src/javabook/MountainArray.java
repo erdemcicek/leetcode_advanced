@@ -2,8 +2,8 @@ package javabook;
 
 import java.util.Arrays;
 
-
 public class MountainArray {
+	
 	public static void main(String[] args) {
         
 		int[] arr = {0, 2, 5, 4, 1};
@@ -12,6 +12,7 @@ public class MountainArray {
 		System.out.println("------------");
 		System.out.println(isMountain(brr));	
     }
+	
 	private static boolean isMountain(int[] arr) {
 		
 		int max = Arrays.stream(arr).max().getAsInt(), ind = 0;

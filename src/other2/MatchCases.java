@@ -8,6 +8,10 @@ public class MatchCases {
 //		System.out.println(matchCases("AcZCbaBz"));  // 8
 	//	System.out.println(isMatch("AcZCbaBz"));
 		System.out.println(matchCases("azABaabzaxZ"));
+		
+		
+		
+		
 	}
 	
 	private static int matchCases(String s) {
@@ -30,7 +34,25 @@ public class MatchCases {
 				if(!s.contains((c+"").toUpperCase())) return false;
 			}
 		}
+		
 		return true;
-	}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

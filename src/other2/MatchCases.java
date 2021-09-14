@@ -6,11 +6,8 @@ public class MatchCases {
 //		System.out.println(matchCases("TacoCat"));   // -1
 //		System.out.println(matchCases("azABaabza")); // 5
 //		System.out.println(matchCases("AcZCbaBz"));  // 8
-	//	System.out.println(isMatch("AcZCbaBz"));
+//		System.out.println(isMatch("AcZCbaBz"));
 		System.out.println(matchCases("azABaabzaxZ"));
-		
-		
-		
 		
 	}
 	
@@ -37,22 +34,4 @@ public class MatchCases {
 		
 		return true;
 	}	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

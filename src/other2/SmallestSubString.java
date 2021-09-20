@@ -14,6 +14,7 @@ public class SmallestSubString {  // azABaabzaxZ
         int[] lowercase = new int[26]; // 1, 1, ... 1
 
         for(char c : str.toCharArray()){
+        	
             if(Character.isLowerCase(c)){
                 lowercase[c-'a']++;
             }

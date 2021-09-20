@@ -12,13 +12,6 @@ public class MatchCases {
 	}
 	
 	private static int matchCases(String s) {
-		
-		for(int i = 0 ; i < s.length() ; i++) {
-			if(Character.isLowerCase(s.charAt(i)) && !s.contains( (s.charAt(i) + "").toUpperCase())) {
-				
-			}
-		}
-	
 		int  max = 0;
 		for(int i = 0 ; i < s.length() - 1 ; i++) {
 			for(int j = i + 2 ; j <= s.length() ; j++) {

@@ -11,7 +11,7 @@ public class CanConstructOurselves {
 		System.out.println(canConstruct("deniz", list)); 
 
 	}
-	public static boolean canConstruct(String target, List<String> list) { 
+	private static boolean canConstruct(String target, List<String> list) { 
 		
 		// canConstruct("", list) ==> true
 		if ( target.equals("")) return true;

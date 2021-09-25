@@ -16,7 +16,7 @@ public class CanConstructString {
 		
 		System.out.println(canConstruct("eeeeeeeeeeeeeeeeef", list, hm));
 	}
-	public static boolean canConstruct(String target, List<String> bank, Map<String, Boolean> hm ) {
+	private static boolean canConstruct(String target, List<String> bank, Map<String, Boolean> hm ) {
 		
 		if ( hm.containsKey(target)) return hm.get(target);
 		if ( target.equals("")) return true;

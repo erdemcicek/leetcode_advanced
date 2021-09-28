@@ -11,7 +11,8 @@ public class CanSum {
 		int[] arr = {25, 5, 12};
 		System.out.println(canSum(100, arr, hm));
 	}
-	public static boolean canSum(int targetSum, int[] numbers, Map<Integer, Boolean> hm ) {
+	
+	private static boolean canSum(int targetSum, int[] numbers, Map<Integer, Boolean> hm ) {
 		
 		if ( hm.containsKey(targetSum)) return hm.get(targetSum);
 		if ( targetSum == 0 ) return true;

@@ -6,7 +6,8 @@ public class LongestPalDynamic {
 		System.out.println(longestPal("madame"));
 		
 	}
-	public static String longestPal(String s) {
+	
+	private static String longestPal(String s) {
 												
 		if ( s == null || s.length() < 1) return "";
 		
@@ -24,7 +25,8 @@ public class LongestPalDynamic {
 		
 		return s.substring(start, end + 1); // 0 3  len 3 end-start
 	}
-	public static int expand(String s, int left, int right) {
+	
+	private static int expand(String s, int left, int right) {
 		
 		if ( s == null || left > right) return 0;
 		

@@ -15,7 +15,8 @@ public class CountConstruct {
 		System.out.println(countConstruct("erdem", list, hm));
 
 	}
-	public static long countConstruct(String target, List<String> bank, Map<String, Long> hm) {
+	
+	private static long countConstruct(String target, List<String> bank, Map<String, Long> hm) {
 
 		if ( hm.containsKey(target)) return hm.get(target); 
 		if ( target.equals("")) return 1;
@@ -30,5 +31,6 @@ public class CountConstruct {
 		
 		hm.putIfAbsent(target, totalCount);
 		return totalCount;
+		
 	}
 }

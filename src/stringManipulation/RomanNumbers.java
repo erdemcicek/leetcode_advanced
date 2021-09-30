@@ -8,8 +8,9 @@ public class RomanNumbers {
 	public static void main(String[] args) {
 		System.out.println(romanConv("CMXC"));
 		
-	}										  
-	public static int romanConv(String str) {
+	}
+	
+	private static int romanConv(String str) {
 		
 		Map<Character, Integer> hm = new HashMap<>();
 		hm.put('I', 1);

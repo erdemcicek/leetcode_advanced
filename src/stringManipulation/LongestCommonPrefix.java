@@ -29,8 +29,9 @@ public class LongestCommonPrefix {
 		System.out.println(longestCommonPrefix2(st));
 		
 	}
+	
 	// 1.Way
-	public static String longestCommonPrefix1(String[] strs) {
+	private static String longestCommonPrefix1(String[] strs) {
 		
 		StringBuilder sb = new StringBuilder();
 		
@@ -50,7 +51,7 @@ public class LongestCommonPrefix {
 	}
 	
 	// 2.Way
-	public static String longestCommonPrefix2(String[] a) {
+	private static String longestCommonPrefix2(String[] a) {
 		
 	    int size = a.length;
 	    /* if size is 0, return empty string */
@@ -71,4 +72,3 @@ public class LongestCommonPrefix {
 	    return pre;
 	  }
 }
-

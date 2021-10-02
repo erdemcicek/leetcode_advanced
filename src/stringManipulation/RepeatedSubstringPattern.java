@@ -1,15 +1,14 @@
 package stringManipulation;
-/*
- 	Given a string s, check if it can be constructed by taking a substring of it 
- 	and appending multiple copies of the substring together.
- 	
- */
+
+// Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.
+
 public class RepeatedSubstringPattern {
 	
 	public static void main(String[] args) {
 		
 		System.out.println(repSubPattern("abaaba"));		
 	}
+	
 	private static boolean repSubPattern(String s) {
 		
 		int n = s.length();

@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Hangman {
+	
 	/*
 	 	Write a hangman game that randomly generates a word and promts user to guess one letter at a time, 
 	 	as presented in the
@@ -20,12 +21,15 @@ public class Hangman {
 		String right = words[(int)(Math.random()*words.length)];
 		char[] rightArr = right.toCharArray();  // ["c","a","l","e","n","d","a","r"];
 		String ast = "";
+		
 		for ( int i = 0 ; i < rightArr.length; i++) {  // [*,*,*,*,*,*,*,*]
 			ast += "*";
 		}
+		
 		char[] astArr = ast.toCharArray();
 		boolean[] index = new boolean[rightArr.length];
 		int mistake = 0;
+		
 		do {
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter a letter in word" + Arrays.toString(astArr));
@@ -36,6 +40,7 @@ public class Hangman {
 					index[i] = true;
 				}
 			}
+			
 			if ( !right.contains(s)) {
 				mistake++;
 				System.out.println(s + " is not in the word");
@@ -45,6 +50,7 @@ public class Hangman {
 					astArr[i] = rightArr[i];
 				}
 			}
+			
 			System.out.println(Arrays.toString(astArr));
 			scan.close();
 		}while(!Arrays.equals(astArr, rightArr));

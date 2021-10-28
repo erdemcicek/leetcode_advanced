@@ -9,7 +9,8 @@ public class gridTraveler {
 		Map<String, Long> hm1 = new HashMap<>();
 		System.out.println(gridTravel(18, 18, hm1));	
 	}
-	public static long gridTravel(int m, int n, Map<String, Long> hm) {
+	
+	private static long gridTravel(int m, int n, Map<String, Long> hm) {
 
 		String s = m + "," + n; // this will create unique key for each path
 		if ( hm.containsKey(s)) return hm.get(s); 

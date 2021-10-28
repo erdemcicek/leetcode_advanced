@@ -8,10 +8,10 @@ public class IsAnagram {
 		
 //		System.out.println(isAnagram("anagram", "graanma"));
 		char[] arr = {'h','e','l'};
-		revStr(arr);
-		
+		revStr(arr);	
 	}
-	public static boolean isAnagram(String s, String t) {
+	
+	private static boolean isAnagram(String s, String t) {
 		
 		char[] sch = s.toCharArray();
 		char[] tch = t.toCharArray();
@@ -19,7 +19,8 @@ public class IsAnagram {
 		Arrays.sort(tch);
 		return Arrays.equals(sch, tch);
 	}
-	public static void revStr(char[] s) {
+	
+	private static void revStr(char[] s) {
 		
 		int left = 0, right = s.length-1;
 		
@@ -33,5 +34,4 @@ public class IsAnagram {
 		}
 		System.out.println(Arrays.toString(s));
 	}
-
 }

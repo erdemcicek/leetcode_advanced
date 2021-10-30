@@ -14,7 +14,8 @@ public class ClosedIsland {
 		
 		
 	}
-	public static int numberOfClosedIsland(int[][] grid) {
+	
+	private static int numberOfClosedIsland(int[][] grid) {
 		
 		if ( grid == null || grid.length == 0 ) return 0;
 		int numOfClosedIsland = 0, rows = grid.length, cols = grid[0].length;
@@ -30,6 +31,7 @@ public class ClosedIsland {
 		}
 		return numOfClosedIsland;
 	}
+	
 	private static boolean isClosedIsland(int[][] grid, int i, int j, int rows, int cols) {
 		
 		if ( grid[i][j] == -1 || grid[i][j] == 1) return true;
@@ -41,6 +43,7 @@ public class ClosedIsland {
 		boolean down = isClosedIsland(grid, i+1, j, rows, cols);
 		return left && right && up && down;
 	}
+	
 	private static boolean isOnPerimeter(int i, int j, int rows, int cols) {
 		return i == 0 || j == 0 || i == rows - 1 || j == cols - 1;
 	}

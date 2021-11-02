@@ -23,7 +23,8 @@ public class ClosestSumPair {
         System.out.println(Arrays.toString(closestSumPair(a1, a2, aTarget)));
 		
 	}
-	public static int[] closestSumPair(int[] arr, int[] brr, int target) {
+	
+	private static int[] closestSumPair(int[] arr, int[] brr, int target) {
 		
 		Arrays.sort(arr);
 		Arrays.sort(brr);
@@ -51,5 +52,4 @@ public class ClosestSumPair {
 	
 		return closestPair;
 	}
-
 }

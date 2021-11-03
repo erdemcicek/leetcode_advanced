@@ -14,7 +14,7 @@ public class LongestPathQuestion {
 		System.out.println(longestIncreasingPath(matrix));
 		
 	}
-	public static int longestIncreasingPath(int[][] matrix) {
+	private static int longestIncreasingPath(int[][] matrix) {
 		
 		if ( matrix == null || matrix.length == 0) return 0;
 		int n = matrix.length, m = matrix[0].length, longestPath = 0;
@@ -29,6 +29,7 @@ public class LongestPathQuestion {
 		
 		return longestPath;
 	}
+	
 	private static int longestIncreasingPath(int[][] matrix, int[][] cache, int n, int m, int i, int j) {
 		
 		if ( cache[i][j] > 0) return cache[i][j] ;

@@ -9,8 +9,8 @@ public class MaxWaterContainer {
 		System.out.println(maxArea(heights));
 		
 	}
-	public static int maxArea(int[] heights) {
-		
+	
+	private static int maxArea(int[] heights) {
 		
 		int left = 0, right = heights.length-1;
 		int max = 0;

@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class SmallestSubString {  // azABaabzaxZ
 
-    public static String findSmallest(String str){ // azABaabza
+    private static String findSmallest(String str){ // azABaabza
     								   // a, b, ...x, z
         int[] capital = new int[26];   // 4, 1, ...1, 2
         
@@ -26,7 +26,9 @@ public class SmallestSubString {  // azABaabzaxZ
         // these are the characters which have only lowecase
         // or only uppercase
         // they can never be part of the window
+        
         Set<Character> invalidChars = new HashSet<>(); // x
+        
         for(int i=0; i<26; i++){
             if( (capital[i] == 0)^(lowercase[i] == 0)){ // While capital exists, lowercase does not, or vice versa
                 if(capital[i] == 0)  // a exists whereas A does not
@@ -97,7 +99,7 @@ public class SmallestSubString {  // azABaabzaxZ
 
     }
 
-    public static boolean isBalanced(int[] capital, int[] lowercase){
+    private static boolean isBalanced(int[] capital, int[] lowercase){
 
         for(int i=0; i<26; i++){
 

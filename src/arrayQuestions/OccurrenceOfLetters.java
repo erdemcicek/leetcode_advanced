@@ -9,8 +9,9 @@ public class OccurrenceOfLetters {
 	public static void main(String[] args) {
 		//findOccurrence("erdem");
 		findOccFunctional("erdem");
-		
 	}
+	
+	// 1.way structured programming
 	
 	private static void findOccurrence(String str) {
 		String[] s = str.split("");
@@ -25,7 +26,9 @@ public class OccurrenceOfLetters {
 				System.out.println(s[i] + " " + count[i]);
 		}
 	}
+	
 	// 2.way functional programming
+	
 	private static void findOccFunctional(String str) {
 		Stream.of(str.split("")).distinct()
 		.forEach(t->System.out.println(t + " " + Collections.frequency(Arrays.asList(str.split("")), t)));

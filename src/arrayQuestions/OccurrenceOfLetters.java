@@ -1,12 +1,18 @@
 package arrayQuestions;
 
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Stream;
 
 public class OccurrenceOfLetters {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		String str = scan.next();
+		//findOccurrence("erdem");
+		findOccFunctional("erdem");
+		
+	}
+	
+	private static void findOccurrence(String str) {
 		String[] s = str.split("");
 		int[] count = new int[str.length()];
 		for ( int i = 0 ; i < str.length() ; i++) {	
@@ -18,6 +24,10 @@ public class OccurrenceOfLetters {
 			if ( count[i] != 0)
 				System.out.println(s[i] + " " + count[i]);
 		}
-		scan.close();
+	}
+	// 2.way functional programming
+	private static void findOccFunctional(String str) {
+		Stream.of(str.split("")).distinct()
+		.forEach(t->System.out.println(t + " " + Collections.frequency(Arrays.asList(str.split("")), t)));
 	}
 }

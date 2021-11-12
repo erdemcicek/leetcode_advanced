@@ -40,9 +40,13 @@ public class BinPacking {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the number of objects");
+		
 		int n = scan.nextInt();
+		
 		System.out.println("Enter the weights of the objects");
+		
 		int count = 0;
+		
 		while( count < n) {
 			System.out.println("Please enter " + (count+1) + ". object");
 			int b = scan.nextInt();
@@ -53,6 +57,7 @@ public class BinPacking {
 			else if ( b >= 10) System.out.println("Luggages that are 10 pounds and more are not allowed");
 			else System.out.println("Invalid luggage weight.");	
 		}
+		
 		System.out.println("You have " + mylist.size() + " objects in total");
 		
 		while ( !mylist.isEmpty()) {
@@ -84,6 +89,7 @@ public class BinPacking {
 		System.out.println("Thank you. Have a good flight");
 		scan.close();
 	}
+	
 	private static void printContainer(List<Integer> list) {
 		for ( int i = 0 ; i < list.size() ; i++) System.out.print(list.get(i) + " ");
 	}

@@ -14,19 +14,24 @@ package mathquestions;
 public class ConvertScientificNotations {
 	
 	public static void main(String[] args) {
+		
 		System.out.println(convert(43261072455745745672456000000000000.343462457245));
 
 	}
 	
 	private static String convert(double n) {
+		
 		String[] suffixes = {"", "K", "M", "B", "T", "Q", "Qi", "Sx", "Sp", "Oc", "Non", "Dec"};
 		// 					      3    6    9    12 ...                                    33
+		
 		double x = Math.abs(n);
 		int ind = 0;
+		
 		while(x>=1000) {
 			x /= 1000;
 			ind++;
 		}
+		
 		return String.format("%.2f", n>0?x:-x) + suffixes[ind];
 	}
 }

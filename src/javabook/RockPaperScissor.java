@@ -24,28 +24,38 @@ public class RockPaperScissor {
 	 */
 
 	public static void main(String[] args) {
+		
 		Scanner scan = new Scanner(System.in);
 		int countUserWin = 0 , countComWin = 0;
+		
 		while ( countUserWin < 5 && countComWin < 5) {
+			
 			System.out.println("Enter from 0 to 2 -> scissor (0), rock (1), paper (2):");
 			int user = scan.nextInt();
 			int com = (int)(Math.random() * 3);
+			
 			if ( user > -1 && user < 3) {
+				
 				if ( ( user == 0 && com == 2) || ( user == 1 && com == 0) || ( user == 2 && com == 1) ) {
 					countUserWin++;
 					System.out.println("You won this turn. You : " + countUserWin + "  Computer : " + countComWin); 
 				}
+				
 				else if ( ( com == 0 && user == 2) || ( com == 1 && user == 0) || ( com == 2 && user == 1) ){
 					countComWin++;
 					System.out.println("You lost this turn. You : " + countUserWin + "  Computer : " + countComWin); 
 				}
+				
 				else System.out.println("It's a draw. You : " + countUserWin + "  Computer : " + countComWin);
-			}	
+			}
+			
 			else System.out.println("Please enter a valid input.");
 		}
+		
 		if ( countUserWin > countComWin) {
 			System.out.println("Congradulations!!! You won!!!" + "\nFinal score : You :" + countUserWin + " Computer :" + countComWin);
 		}
+		
 		else 
 			System.out.println("Unfortunately you lost." + "\nFinal score : You :" + countUserWin + " Computer :" + countComWin);
 		scan.close();

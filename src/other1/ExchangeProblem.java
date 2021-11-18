@@ -13,7 +13,6 @@ public class ExchangeProblem {
 		Map<Boolean, List<Integer>> hm = new HashMap<>();
 		
 		System.out.println(canExchange(5, list, hm));
-//		System.out.println(canExchange(5, list));
 		
 	}
 
@@ -33,6 +32,7 @@ public class ExchangeProblem {
 				return true;
 			}
 		}
+		
 //		System.out.println(hm.containsKey(true));
 //		System.out.println(hm.size());
 		return false;

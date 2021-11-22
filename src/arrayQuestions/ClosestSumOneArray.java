@@ -27,7 +27,7 @@ public class ClosestSumOneArray {
 		
 	}
 	
-	public static int[] closestPair(int[] nums, int target) {
+	private static int[] closestPair(int[] nums, int target) {
 		
 		Arrays.sort(nums);
 		
@@ -50,6 +50,7 @@ public class ClosestSumOneArray {
 			else j--;
 			
 		}
+		
 		return closestPair;
 	}
 }

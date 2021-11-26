@@ -9,6 +9,7 @@ public class SubsetTotal {
 		int[] arr = { 2, 4, 6, 5, 10, 2, 4};
 		System.out.println(countSets(arr, 16));
 	}
+	
 	private static int countSets(int[] arr, int total) {
 		Map<String, Integer> hm = new HashMap<>();
 		return rec(arr, total, arr.length-1, hm);
@@ -28,9 +29,12 @@ public class SubsetTotal {
 		else if ( total < arr[i]) to_return = rec(arr, total, i-1, hm);
 		
 		else to_return = rec(arr, total - arr[i], i-1, hm) + rec(arr, total, i-1, hm);
+		
 		//   take current ind, and search subtotal   do not take current ind, search total
 		// total > 0 , total > arr[i] , 
+		
 		hm.put(key, to_return);
+		
 		return to_return;
 	}
 }

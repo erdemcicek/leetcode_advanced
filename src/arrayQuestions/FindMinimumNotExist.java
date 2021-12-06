@@ -13,7 +13,7 @@ public class FindMinimumNotExist {
 
 	}
 	
-	public static int solution(int[] A) {
+	private static int solution(int[] A) {
 		if(A==null) return 1;
 		Arrays.sort(A);
 		int[] arr = Arrays.stream(A).distinct().filter(t->t>0).toArray();
@@ -25,5 +25,4 @@ public class FindMinimumNotExist {
 		}
 		return arr[arr.length-1] + 1;
 	}
-
 }

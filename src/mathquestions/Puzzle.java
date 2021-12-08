@@ -71,5 +71,4 @@ public class Puzzle {
 //		return brr;
 //	}
 	
-
 }

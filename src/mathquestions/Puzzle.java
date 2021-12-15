@@ -10,7 +10,6 @@ public class Puzzle {
 	
 	public static void main(String[] args) {
 		findPuzzle(7);
-//		System.out.println(Arrays.toString(shiftArray(new int[] {1, 7, 13, 19, 25}, 5))); // 0==2, 1==3, 2==4
 //		dequeImpl(new Integer[] {1, 7, 13, 19, 25}, 2); // 0==2, 1==3, 2==4
 
 	}
@@ -53,22 +52,5 @@ public class Puzzle {
 		return arr;
 		
 	}
-	
-//	private static int[] swapArrayPartially(int[] arr, int marge) { 
-//		
-//		int[] brr = new int[arr.length];
-//		
-//		List<Integer> first = new ArrayList<>();
-//		for(int i = marge ; i < arr.length ; i++) first.add(arr[i]);
-//		
-//		List<Integer> last = new ArrayList<>();
-//		for(int i = 0 ; i < marge ; i++) last.add(arr[i]);
-//		
-//		first.addAll(last);
-//		
-//		for(int i = 0 ; i < brr.length ; i++) brr[i] = first.get(i);
-//		
-//		return brr;
-//	}
 	
 }

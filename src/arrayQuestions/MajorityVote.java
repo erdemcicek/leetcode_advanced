@@ -11,6 +11,7 @@ public class MajorityVote {
 //		System.out.println(majorityElement(arr));
 		
 	}
+	
 	// 1.Way
 	private static int majorityElement(Integer[] nums) {
 		
@@ -27,6 +28,7 @@ public class MajorityVote {
 						  // you have to check this as shown below
 		return doesHaveMaj(nums, candidate)?(candidate):0;
 	}
+	
 	private static boolean doesHaveMaj(Integer[] nums, int candidate) {
 		
 		return Arrays.stream(nums).filter(t->t==candidate).count() > nums.length/2;

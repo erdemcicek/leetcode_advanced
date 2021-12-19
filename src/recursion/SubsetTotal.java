@@ -6,11 +6,13 @@ import java.util.Map;
 public class SubsetTotal {
 	
 	public static void main(String[] args) {
+		
 		int[] arr = { 2, 4, 6, 5, 10, 2, 4};
 		System.out.println(countSets(arr, 16));
 	}
 	
 	private static int countSets(int[] arr, int total) {
+		
 		Map<String, Integer> hm = new HashMap<>();
 		return rec(arr, total, arr.length-1, hm);
 	}

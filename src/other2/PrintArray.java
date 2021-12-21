@@ -17,6 +17,7 @@ public class PrintArray {
 			return;
 		}
 		boolean containsNegative = Arrays.stream(arr).anyMatch(t->t<0);
+		
 		if(containsNegative) {
 			System.out.println("Please do not enter negative numbers");
 			return;
@@ -24,6 +25,7 @@ public class PrintArray {
 		
 		int max = Arrays.stream(arr).max().getAsInt(); // 6	
 		int max_in = max; // because max is modified in for loop, I stored it in a separate variable
+		
 		for(int i = 0; i < max_in ; i++) {
 			for(int j = 0 ; j < arr.length ; j++) {	    
 				if( arr[j] < max) System.out.print("   ");
@@ -32,7 +34,8 @@ public class PrintArray {
 			System.out.println();
 			max--;
 		}
-		for(int k = 0 ; k < arr.length ; k++) System.out.print("---");
+		
+		for(int w : arr) System.out.print("---");
 		System.out.println();
 		for(int w : arr) System.out.print(w + "  ");
 	}

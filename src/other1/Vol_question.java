@@ -22,8 +22,11 @@ public class Vol_question {
 		// A --> 65  ; E --> 69 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the final letter for the pattern");
+		
 		char ch = scan.next().toUpperCase().charAt(0);
+		
 		if ( ch < 'A' || ch > 'Z') System.out.println("Please enter an alphabet");
+		
 		else {
 			
 			for ( char c = 'A' ; c <= ch ; c++) {// A,B,C,D,E

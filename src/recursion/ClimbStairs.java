@@ -7,6 +7,7 @@ public class ClimbStairs {
 		climbStairs2(3);
 	}
 	
+	// with recursion
 	private static int climbStairs(int n) {
 		
 		if ( n == 1) return 1;
@@ -15,6 +16,7 @@ public class ClimbStairs {
 		return climbStairs(n-1) + climbStairs(n-2);
 	}
 	
+	// without recursion // more efficient
 	private static int climbStairs2(int n) {
 		
 		if(n==1) return 1;

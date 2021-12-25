@@ -10,12 +10,14 @@ public class MountainArray {
 		int[] brr = {5, 2, 7, 1, 4};
 		System.out.println(isMountain(arr));
 		System.out.println("------------");
-		System.out.println(isMountain(brr));	
+		System.out.println(isMountain(brr));
+		
     }
 	
 	private static boolean isMountain(int[] arr) {
 		
-		int max = Arrays.stream(arr).max().getAsInt(), ind = 0;
+		int max = Arrays.stream(arr).max().getAsInt();
+		int ind = 0;
 	
 		for (int i = 0 ; arr[i] != max ; i++) {
 			ind++;

@@ -52,8 +52,11 @@ public class Hangman {
 			}
 			
 			System.out.println(Arrays.toString(astArr));
+			
 			scan.close();
+			
 		}while(!Arrays.equals(astArr, rightArr));
+		
 		System.out.println("The word is " + right + ". You missed " + mistake + " time.");	
 	}	
 }		

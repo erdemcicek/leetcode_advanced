@@ -26,5 +26,4 @@ public class ArrayDivider {
 		int[] b = {2, -2, 3, 1, 2};
 		System.out.println(divideArrays(a, b));
 	}
-
 }

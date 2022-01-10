@@ -6,7 +6,9 @@ import java.util.List;
 public class Permutations_leetcode46 {
 	
 	public static void main(String[] args) {
+		
 		System.out.println(permute(new int[] {1,2,3}));
+		
 	}
 	
 	private static List<List<Integer>> permute(int[] nums){
@@ -18,7 +20,9 @@ public class Permutations_leetcode46 {
 		
 		return ans;
 	}
+	
 	private static void permutations(int[] nums, boolean[] vis, List<List<Integer>> ans, List<Integer> list) {
+		
 		if(list.size() == nums.length) {
 			ans.add(new ArrayList<>(list));
 			return;
@@ -35,6 +39,4 @@ public class Permutations_leetcode46 {
 			}
 		}
 	}
-	
-
 }

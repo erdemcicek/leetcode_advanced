@@ -15,8 +15,6 @@ public class GenerateParanthesis {
 		char[] p = new char[] {'(', ')'};
 		Deque<Character> d = new ArrayDeque<>();
 		
-		
-		
 		return null;
 	}
 	

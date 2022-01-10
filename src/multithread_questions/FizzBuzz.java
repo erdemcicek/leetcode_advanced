@@ -27,5 +27,4 @@ public class FizzBuzz {
     public void number(IntConsumer printNumber) throws InterruptedException {
         
     }
-
 }

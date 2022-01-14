@@ -9,9 +9,13 @@ import java.util.stream.Stream;
 public class ValidSudoku {
 	
 	public static void main(String[] args) {
+		
 		System.out.println(isValidSudoku(new char[][] {{'1', '2', '.'}, {'3', '.', '.'}, {'2', '1', '.'}}));
+		
 	}
+	
 	public static boolean isValidSudoku(char[][] c) {
+		
 		Character[][] d = new Character[c.length][c[0].length];
 		for(int i = 0 ; i < c.length ; i++) {
 			for(int j = 0 ; j < c[0].length ; j++) {
@@ -29,5 +33,4 @@ public class ValidSudoku {
 		
 		return true;
 	}
-
 }

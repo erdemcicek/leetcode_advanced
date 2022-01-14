@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 public class GroupAnagrams {
 	
 	public static void main(String[] args) {
+		
 //		System.out.println(sortString("erdem"));
 		System.out.println(groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"}));
 //		System.out.println(groupAnagrams(new String[] {""}));
@@ -32,24 +33,18 @@ public class GroupAnagrams {
 	}
 	
 	private static List<List<String>> groupAnagrams(String[] strs) {
+		
 		var x = Arrays.stream(strs).collect(Collectors.groupingBy(t->sortString(t)));
 		List<List<String>> list = new ArrayList<>();
 		x.values().forEach(t->list.add(t));
+		
         return list;
+		
     }
 	private static String sortString(String s) {
+		
 		char[] a = s.toCharArray();
 		Arrays.sort(a);
 		return new String(a);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

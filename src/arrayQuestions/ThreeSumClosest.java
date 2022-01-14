@@ -33,12 +33,14 @@ public class ThreeSumClosest {
 	// -7, 1, 2
 	// -8
 	public static void main(String[] args) {
+		
 		System.out.println(threeSumClosest(new int[] {1,2,0}, 3)); // -7, -3, 0, 1, 2
 		System.out.println(threeSumClosest2(new int[] {1,2,0}, 3)); // -7, -3, 0, 1, 2
 
 	}
 	
 	private static int threeSumClosest2(int[] nums, int target) {
+		
         int res = 0;
         int diff = Integer.MAX_VALUE;    
         Arrays.sort(nums);
@@ -67,10 +69,11 @@ public class ThreeSumClosest {
 	  return res;
 	}
 	
-	
 	private static int findClosest(int[] nums, int target) {
+		
 		Arrays.sort(nums);
 		int c;
+		
 		if (Arrays.stream(nums).anyMatch(t->t==target)) return target;
 		else if(target > Arrays.stream(nums).max().getAsInt()) c = nums[nums.length-1];
 		else if (target < Arrays.stream(nums).min().getAsInt()) c = nums[0];
@@ -115,22 +118,4 @@ public class ThreeSumClosest {
 		
 		return x + y;
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

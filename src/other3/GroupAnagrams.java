@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/*	Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+/*	
+	Given an array of strings strs, group the anagrams together. You can return the answer in any order.
 	An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
 	typically using all the original letters exactly once.
 	
@@ -20,6 +21,7 @@ import java.util.stream.Collectors;
 	Example 3:
 	Input: strs = ["a"]
 	Output: [["a"]]
+	
 */
 public class GroupAnagrams {
 	
@@ -28,8 +30,7 @@ public class GroupAnagrams {
 //		System.out.println(sortString("erdem"));
 		System.out.println(groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"}));
 //		System.out.println(groupAnagrams(new String[] {""}));
-//		System.out.println("".hashCode());
-		
+//		System.out.println("".hashCode());		
 	}
 	
 	private static List<List<String>> groupAnagrams(String[] strs) {
@@ -38,7 +39,7 @@ public class GroupAnagrams {
 		List<List<String>> list = new ArrayList<>();
 		x.values().forEach(t->list.add(t));
 		
-        return list;
+        	return list;
 		
     }
 	private static String sortString(String s) {

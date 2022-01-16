@@ -22,6 +22,7 @@ public class ValidSudoku {
 				d[i][j] = Character.valueOf(c[i][j]);
 			}
 		}
+		
 		for(int i = 0 ; i < d.length ; i++) {
 			for(int j = 0 ; j < d[0].length ; j++) {
 				if(Character.isDigit(d[i][j])) {
@@ -33,4 +34,6 @@ public class ValidSudoku {
 		
 		return true;
 	}
+	
+	
 }

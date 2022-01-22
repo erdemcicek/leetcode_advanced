@@ -35,6 +35,7 @@ public class Hangman {
 			System.out.println("Enter a letter in word" + Arrays.toString(astArr));
 			char c = scan.next().toLowerCase().charAt(0);
 			String s = "" + c;
+			
 			for ( int i = 0 ; i < right.length(); i++) {
 				if ( rightArr[i] == c) {
 					index[i] = true;
@@ -45,6 +46,7 @@ public class Hangman {
 				mistake++;
 				System.out.println(s + " is not in the word");
 			}
+			
 			for ( int i = 0 ; i < right.length() ; i++) {
 				if ( index[i]) {
 					astArr[i] = rightArr[i];
@@ -53,10 +55,13 @@ public class Hangman {
 			
 			System.out.println(Arrays.toString(astArr));
 			
+			
 			scan.close();
 			
 		}while(!Arrays.equals(astArr, rightArr));
 		
-		System.out.println("The word is " + right + ". You missed " + mistake + " time.");	
+		
+		System.out.println("The word is " + right + ". You missed " + mistake + " time.");
+		
 	}	
 }		

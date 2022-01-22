@@ -48,19 +48,24 @@ public class BinPacking {
 		int count = 0;
 		
 		while( count < n) {
+			
 			System.out.println("Please enter " + (count+1) + ". object");
 			int b = scan.nextInt();
+			
 			if ( b < 10 && b > 0) {
 				mylist.add(b);
 				count++;
 			}
-			else if ( b >= 10) System.out.println("Luggages that are 10 pounds and more are not allowed");
-			else System.out.println("Invalid luggage weight.");	
+			else if ( b >= 10) 
+				System.out.println("Luggages that are 10 pounds and more are not allowed");
+			else 
+				System.out.println("Invalid luggage weight.");	
 		}
 		
 		System.out.println("You have " + mylist.size() + " objects in total");
 		
 		while ( !mylist.isEmpty()) {
+			
 			int contNum = 0;
 			for ( int i = 0 ; i < mylist.size() ; ) { 
 				int sum = mylist.get(i);  
@@ -86,11 +91,15 @@ public class BinPacking {
 				idx.clear();	
 			}	
 		}
+		
 		System.out.println("Thank you. Have a good flight");
+		
 		scan.close();
 	}
 	
 	private static void printContainer(List<Integer> list) {
-		for ( int i = 0 ; i < list.size() ; i++) System.out.print(list.get(i) + " ");
+		for ( int i = 0 ; i < list.size() ; i++) 
+			System.out.print(list.get(i) + " ");
 	}
+	
 }

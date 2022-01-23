@@ -7,7 +7,7 @@ public class ConvertStringToCamelCase {
 		System.out.println(toCamelCase("the-Stealth-Warrior"));
 	}
 	
-	static String toCamelCase(String s) { // the_stealth_warrior
+	private static String toCamelCase(String s) { // the_stealth_warrior
 		
 		var sb = new StringBuilder(s);
 		
@@ -17,10 +17,7 @@ public class ConvertStringToCamelCase {
 			}
 		}
 		
-		String str = sb.toString().replaceAll("_", "").replaceAll("-", "");
-		
-		
-		return str;
+		return sb.toString().replaceAll("_", "").replaceAll("-", "");;
 	}
 
 }

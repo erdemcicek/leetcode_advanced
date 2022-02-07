@@ -11,7 +11,9 @@ public class DeleteFiveFindMax {
 		System.out.println(deleteFive(-5859));
 		System.out.println(deleteFive(-5000));
 //		System.out.println(deleteFive(515)); // 51
+		
 	}
+	
 	// 15958 -> 1958
 	// -5859 -> -589
 	// -5000 -> 0
@@ -41,7 +43,6 @@ public class DeleteFiveFindMax {
 		
 		return comp;
 	}
-	
 	
 	
 	private static int deleteFiveWithList(int n) {

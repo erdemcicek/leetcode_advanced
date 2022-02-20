@@ -19,8 +19,7 @@ public class ConvertStringToCamelCase {
 			}
 		}
 		
-		return sb.toString().replaceAll("_", "").replaceAll("-", "");;
+		return sb.toString().replaceAll("_", "").replaceAll("-", "");
 	}
 	
-
 }

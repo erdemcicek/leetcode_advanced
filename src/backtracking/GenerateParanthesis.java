@@ -8,7 +8,9 @@ import java.util.List;
 public class GenerateParanthesis {
 	
 	public static void main(String[] args) {
+		
 //		System.out.println(generateParenthesis(3));
+		
 	}
 	
 	private static List<String> stackGeneratePar(int n){

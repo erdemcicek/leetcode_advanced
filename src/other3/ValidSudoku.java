@@ -48,7 +48,7 @@ public class ValidSudoku {
 		
 	}
 
-	private static boolean isNumberRow(int[][] board, int number, int row) {
+	private static boolean isNumberInRow(int[][] board, int number, int row) {
 		for(int i = 0; i < GRID_SIZE ; i++) {
 			if(board[row][i] == number) {
 				return true;
@@ -57,7 +57,7 @@ public class ValidSudoku {
 		return false;
 	}
 	
-	private static boolean isNumberColumn(int[][] board, int number, int column) {
+	private static boolean isNumberInColumn(int[][] board, int number, int column) {
 		for(int i = 0; i < GRID_SIZE ; i++) {
 			if(board[i][column] == number) {
 				return true;
@@ -81,8 +81,8 @@ public class ValidSudoku {
 	}
 	
 	private static boolean isValidPlacement(int[][] board, int number, int row, int column) {
-		return !isNumberRow(board, number, row) && 
-				!isNumberColumn(board, number, column) &&
+		return !isNumberInRow(board, number, row) && 
+				!isNumberInColumn(board, number, column) &&
 				!isNumberInBox(board, number, row, column);
 	}
 	
